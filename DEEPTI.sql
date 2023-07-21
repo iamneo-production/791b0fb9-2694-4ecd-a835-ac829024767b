@@ -1,5 +1,4 @@
-CREATE INDEX IND_FA ON FACEBOOK(USERID,DOB_YEAR,AGE);
-
+CREATE INDEX IND_FB ON FACEBOOK(USERID,DOB_YEAR);
 
 /*Write a sql query to find the total number of users who were born in the year 1999?*/
 SELECT COUNT(USERID) FROM FACEBOOK WHERE DOB_YEAR=1999;
@@ -15,6 +14,7 @@ SELECT COUNT(USERID) FROM FACEBOOK WHERE AGE>15;
 
 /*Write a sql query to find the percentage of female users who are using social media?*/
 SELECT (COUNT(CASE WHEN GENDER = 'female' THEN 1 END) * 100.0 / COUNT(USERID)) AS PERCENTAGE FROM FACEBOOK;
+
 
 
 /*Write a sql query to find the percentage of female users above the age 17?*/
