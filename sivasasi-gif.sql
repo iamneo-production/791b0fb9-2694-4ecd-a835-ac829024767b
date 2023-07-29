@@ -1,4 +1,4 @@
-create index IND_MOK
+create index IND_MOK 
 on FACEBOOK (USERID,DOB_YEAR,GENDER,AGE);
 
 /*1.Write a SQL query to find the total number of users who 
@@ -16,7 +16,6 @@ users in
 social media above age 15?*/
 select count(USERID) from FACEBOOK where AGE>15;
 
-
 /*4.Write a SQL query to find the percentage 
 of female users who are using social media?*/
 select (count(case when GENDER='female' then 1 END) * 100.0/count(*))
@@ -26,4 +25,4 @@ as female_PERCENTAGE from FACEBOOK;
  users among users above the age of 17?*/
 select (count(case when GENDER='female' then 1 END) * 100.0/count(*))
 as PERCENTAGE from FACEBOOK where AGE>17;
-
+--
