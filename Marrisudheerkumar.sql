@@ -1,6 +1,5 @@
 CREATE INDEX IDX_FACEBOOK ON FACEBOOK (USERID,AGE,DOB_YEAR,GENDER);
 
-
 /*Write a SQL query to find the total number of users who were born in the year 1999?*/
 SELECT COUNT(USERID) FROM FACEBOOK WHERE DOB_YEAR=1999;
 
