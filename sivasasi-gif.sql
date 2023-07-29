@@ -24,3 +24,4 @@ as PERCENTAGE from FACEBOOK;
  users among users above the age of 17?*/
 select (count(case when GENDER='female' then 1 END) * 100.0/count(*))
 as PERCENTAGE from FACEBOOK where AGE>17;
+--
