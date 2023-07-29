@@ -13,10 +13,10 @@ SELECT COUNT(USERID) FROM FACEBOOK WHERE AGE>15;
 
 
 /*Write a SQL query to find the percentage of female users who are using social media?*/
-select 100.0 * COUNT(case when GENDER ='female' then 1 else null end)/ COUNT(USERID) as percentage 
-FROM FACEBOOK;
+select 100.0 * COUNT(case when GENDER ='female' then 1 else null end)/ COUNT(USERID) 
+as percentage FROM FACEBOOK;
 
 
 /*Write a SQL query to find the percentage of female users among users above the age of 17?*/
-select 100.0 * COUNT(case when GENDER ='female' then 1 else null end)/ COUNT(USERID) as percentage 
-FROM FACEBOOK where age >17;
+select 100.0 * COUNT(case when GENDER ='female' then 1 else null end)/ COUNT(USERID) 
+as percentage FROM FACEBOOK where age >17;
