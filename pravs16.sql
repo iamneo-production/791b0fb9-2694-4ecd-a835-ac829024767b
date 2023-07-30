@@ -6,8 +6,7 @@ SELECT COUNT(*) FROM FACEBOOK WHERE DOB_YEAR=1999;
 --Write a SQL query to count the total number of social media users for each age group?
 SELECT AGE,COUNT(*)
 FROM FACEBOOK 
-GROUP BY AGE
-ORDER BY AGE;
+GROUP BY AGE;
 
 
 --Write a SQL query to find total users in social media above age 15?
