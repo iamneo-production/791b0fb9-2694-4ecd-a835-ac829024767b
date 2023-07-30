@@ -8,7 +8,7 @@ SELECT COUNT(USERID) FROM FACEBOOK WHERE DOB_YEAR=1999;
 
 /*2.Write a SQL query to count the total number of 
 social media users for each age group?*/
-SELECT AGE,COUNT(USERID) FROM FACEBOOK GROUP BY AGE ORDER BY AGE;
+SELECT AGE,COUNT(USERID) FROM FACEBOOK GROUP BY AGE;
 
 
 /*3.Write a sql query to find total 
